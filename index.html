@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="flex justify-between items-center px-6 py-8 mx-auto max-w-7xl">
+        <h1 class="text-4xl font-black tracking-tighter text-zinc-800">
+            KEYBOARD <span class="text-blue-600">WARRIOR</span>
+        </h1>
+
+        <div class="flex items-center text-2xl font-mono gap-8 bg-white shadow-sm border border-zinc-200 px-6 py-3 rounded-2xl">
+            <div class="flex flex-col items-center">
+                <span class="text-xs uppercase font-sans font-bold text-zinc-400 tracking-widest">Time</span>
+                <span id="timer">00:00</span>
+            </div>
+            
+            <button id="btn" class="bg-blue-600 hover:bg-blue-700 active:scale-95 transition-all text-white px-8 py-2 rounded-xl text-lg font-sans font-semibold shadow-lg shadow-blue-200">
+                Start Game
+            </button>
+        </div>
+    </header>
+
+    <main class="mt-20 max-w-5xl mx-auto px-6">
+        <input type="text" id="input" class="opacity-0 absolute" autocomplete="off" autofocus>
+
+        <div id="display" class="text-zinc-300 text-4xl leading-relaxed tracking-wide font-medium min-h-[200px] cursor-text transition-all duration-300">
+            Click "Start Game" to begin your training...
+        </div>
+
+        <section id="stats-section" class="hidden mt-16 pt-12 border-t border-zinc-200">
+            <div class="grid grid-cols-2 gap-8 max-w-md mx-auto">
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-zinc-100 text-center">
+                    <span class="block text-4xl font-black text-blue-600" id="wpm">0</span>
+                    <span class="text-sm font-bold text-zinc-400 uppercase tracking-widest">Words/Min</span>
+                </div>
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-zinc-100 text-center">
+                    <span class="block text-4xl font-black text-emerald-500" id="acc">0%</span>
+                    <span class="text-sm font-bold text-zinc-400 uppercase tracking-widest">Accuracy</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fixed bottom-8 left-0 right-0 text-center text-zinc-400 text-sm">
+        Tip: Focus stays on the text area. Just start typing!
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

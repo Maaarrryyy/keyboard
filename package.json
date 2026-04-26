@@ -1,0 +1,23 @@
+{
+  "name": "keyboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maaarrryyy/keyboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maaarrryyy/keyboard/issues"
+  },
+  "homepage": "https://github.com/Maaarrryyy/keyboard#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.2.4"
+  }
+}
